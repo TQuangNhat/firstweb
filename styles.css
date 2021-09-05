@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-style: 15px;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#header{
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    height: 86px;
+    position: fixed;
+    background-color: #fbfbfb;
+}
+
+#header .logo{
+    height: 86px;
+    display: block;
+    margin-left: 50px;
+    position: absolute;
+}
+
+#header .logo:hover{
+    cursor: pointer;
+}
+
+#nav{
+    margin-left: 350px;
+    display: block;
+    list-style-type: none;
+}
+
+#nav li{
+    position: relative;
+}
+
+#nav > li{
+    display: inline-block;
+}
+
+#nav > li > a{
+    color: #000;
+    display: block;
+}
+
+#nav li a{
+    font-weight: 550;
+    line-height: 86px;
+    padding: 0 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    opacity: 0.85;
+}
+
+#nav > li:hover>  a{
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #0069c5;
+}
+
+#nav .subnav-product{
+    width: 350px;
+    display: none;
+    min-height: 144px;
+    position: absolute;
+    list-style-type: none;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+
+#nav .subnav-product a{
+    color: #0069c5;
+    font-size: 16px;
+    line-height: 40px;
+    display: block;
+    padding: 4px 4px 4px 20px;
+}
+
+#nav .subnav-product a:hover{
+    color: #fff;
+    background-color: #518dc2;
+}
+
+#nav .search-btn{
+    display: inline-block;
+    margin-right: 50px;
+}
+
+#nav .search-btn .search-icon{
+    color: #000;
+    font-size: 20px;
+    line-height: 86px;
+    padding: 30px 40px;
+}
+
+#nav .search-btn .input-text{
+    right: 0;
+    padding: 10px;
+    display: none;
+    min-width: 280px;
+    min-height: 30px;
+    position: absolute;
+    border-radius: 5px;
+    border: 1px solid #0069c5;
+}
+
+#nav .search-btn:hover .input-text{
+    display: block;
+}
+
+#nav .search-btn:hover .search-icon{
+    /* color: #fff;; */
+    cursor: pointer;
+    padding: 30px 40px;
+    position: relative;
+    border-radius: 5px;
+    opacity: 0.5;
+
+}
+
+
+
+#nav li:hover .subnav-product{
+    display: block;
+    box-sizing: border-box;
+}
+
+#slider{
+    padding-top: 50%;
+    margin-top: 86px;
+    position: relative;
+    background: url('/assets/img/slider/slider1.jpg') top center / cover no-repeat;
+}
+
+#content{
+    height: 450px;
+    width: 1200px;
+    margin: 60px auto 60px auto;
+}
+
+#content .content-item{
+    height: 450px;
+    float: left;
+    width: 50%;
+}
+
+#content .content-img{
+    margin-bottom: 15px;
+}
+
+#content .content-img:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#content .content-item > h2:hover{
+color: #006bcc;
+cursor: pointer;
+}
+
+#content .content-item .content-heading{
+    font-size: 18px;
+    opacity: 0.8;
+    margin-bottom: 5px;
+}
+
+#content .content-item .text-section{
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+#content .content-item .btn-section{
+    display: block;
+    height: 40px;
+    width: 175px;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    font-size: 15px;
+    line-height: 40px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.content-item .btn1{
+    background-color: #006bcc;
+}
+
+.content-item .btn2{
+    background-color: #ff8400;
+}
+
+#content .content-item .btn-section:hover{
+    opacity: 0.8;
+}
+
+#footer{
+
+}
+
