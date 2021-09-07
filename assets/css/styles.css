@@ -134,6 +134,7 @@ html{
 
 #slider img{
     /* padding-top: 50%; */
+    top: 0px;
     margin: 86px 0 50px 0;
     position: relative;
     width: 100%;
