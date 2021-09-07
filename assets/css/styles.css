@@ -136,7 +136,7 @@ html{
     padding-top: 50%;
     margin: 86px 0 50px 0;
     position: relative;
-    background: url("/assets/img/slider/slider1.jpg") top center / cover no-repeat;
+    background: url("./assets/img/slider/slider1.jpg") top center / cover no-repeat;
 }
 
 #content{
