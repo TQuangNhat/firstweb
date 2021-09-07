@@ -1,0 +1,351 @@
+/* common */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-style: 15px;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.clear{ 
+    clear: both;
+}
+/* body */
+#header{
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: row;
+    z-index: 1;
+    height: 86px;
+    position: fixed;
+    background-color: #fbfbfb;
+}
+
+#header .logo{
+    max-height: 86px;
+    max-width: 250px;
+    display: block;
+    margin-left: 50px;
+    position: relative;
+}
+
+#header .logo:hover{
+    cursor: pointer;
+}
+
+#nav{
+    margin-left: 50px;
+    list-style-type: none;
+    display: flex;
+}
+
+#nav > li > a{
+    color: #000;
+    display: flex;
+}
+
+#nav li a{
+    font-weight: 500;
+    line-height: 86px;
+    padding: 0 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    opacity: 0.85;
+}
+
+#nav > li:hover>  a{
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #0069c5;
+}
+
+#nav .subnav-product{
+    width: 350px;
+    display: none;
+    min-height: 144px;
+    position: absolute;
+    list-style-type: none;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+
+#nav .subnav-product a{
+    color: #0069c5;
+    font-size: 16px;
+    line-height: 40px;
+    display: block;
+    padding: 4px 4px 4px 20px;
+}
+
+#nav .subnav-product a:hover{
+    color: #fff;
+    background-color: #518dc2;
+}
+
+#nav .search-btn{
+    margin-right: 50px;
+    position: relative;
+}
+
+#nav .search-btn .search-icon{
+    color: #000;
+    font-size: 20px;
+    line-height: 86px;
+    padding: 30px 40px;
+}
+
+#nav .search-btn .input-text{
+    right: 0;
+    padding: 10px;
+    display: none;
+    min-width: 280px;
+    min-height: 30px;
+    position: absolute;
+    border-radius: 5px;
+    border: 1px solid #0069c5;
+}
+
+#nav .search-btn:hover .input-text{
+    display: block;
+}
+
+#nav .search-btn:hover .search-icon{
+    cursor: pointer;
+    padding: 30px 40px;
+    position: relative;
+    border-radius: 5px;
+    background-color: #ccc;
+    opacity: 0.5;
+
+}
+
+#nav li:hover .subnav-product{
+    display: block;
+    box-sizing: border-box;
+}
+
+#slider{
+    padding-top: 50%;
+    margin: 86px 0 50px 0;
+    position: relative;
+    background: url('/assets/img/slider/slider1.jpg') top center / cover no-repeat;
+}
+
+#content{
+    margin-top: 50px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-home1{
+display: flex;
+flex-direction: row;
+align-items:center;
+justify-content: space-around;
+}
+
+.content-home1 .content-item{
+    margin: 0 25px;
+}
+
+.content-home1 .content-img{
+    width: 100%;
+}
+
+.content-home1 .content-heading{
+    font-size: 18px;
+    padding-bottom: 5px;
+    color: #333;
+}
+
+.content-home1 .content-heading:hover{
+    color: #0069c5;
+    cursor: pointer;
+}
+
+.content-home1 .text-section{
+    font-size: 16px;
+    padding-bottom: 15px;
+}
+.content-item .btn1{
+    background-color: #0069c5;
+    height: 40px;
+    width: 175px;
+}
+.content-item .btn2{
+    background-color: #ff8400;
+}
+
+.content-home1 .content-item .btn-section{
+    text-decoration: none;
+    height: 40px;
+    width: 175px;
+    display: block;
+    text-align: center;
+    line-height: 40px;
+    font-weight: 600;
+    font-size: 16px;
+    color: #fff;
+    text-transform: uppercase;
+}
+.content-home1 .content-item .btn-section:hover{
+    opacity: 0.8;
+}
+
+/* Content home2 */
+.content-home2{
+margin-top: 30px;
+background-color: #e3e3e3;
+}
+
+.content-home2 .content-heading{
+text-align: center;
+font-size: 27px;
+color: #0069c5;
+margin: 40px 40px;
+}
+
+.content-home2 .img-home-group{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 78px;
+}
+
+.content-home2 .img-home-group .group{
+    margin: 0 25px;
+}
+
+.img-home-group > .group > img:hover{
+opacity: 0.8;
+cursor: pointer;
+}
+/* content home3 */
+
+.content-home3{
+display: flex;
+flex-direction: column;
+margin-bottom: 50px;
+}
+
+.content-home3 > .title{
+    margin-top: 60px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 25px;
+    color: #0069c5;
+}
+
+.content-home3 > .content-sub a{
+    font-size: 18px;
+    color: #333;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    height: 40px;
+    text-transform: uppercase;
+    line-height: 40px;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    text-decoration: none;
+    margin-bottom: 30px;
+    display: block;
+}
+
+.content-home3 .content-sub a:hover,
+.content-home3 .list-product p:hover{
+    color: #ff8400;
+    cursor: pointer;
+}
+
+.content-home3 .list-product img:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.content-home3 .list-product{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin:0 -12px 30px;
+}
+
+.content-home3 .list-product > div{
+    margin: 0 14px;
+    font-size: 18px;
+}
+
+.content-home3 .list-product p{
+    text-align: center;
+    display: block;
+    height: 40px;
+    padding-bottom: 20px;
+    color: #333333;
+    font-weight: 500;
+}
+
+#map{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+#map .info{
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    width: 400px;
+}
+
+#map .info .header{
+    font-size: 22px;
+    color: #000;
+    font-weight: 600;
+    margin: 80px 0 15px 0;
+}
+
+#map .content{
+    margin: 0 15px 25px 0;
+    text-align: justify;
+}
+.info .info-item{
+display: flex;
+flex-direction: column;
+width: 250px;
+}
+
+.info .info-item p{
+    margin-bottom: 10px;
+}
+.info .info-item input{
+    height: 30px;
+    margin-bottom: 15px;    
+}
+.info-item button{
+    width: 80px;
+    height: 30px;
+    border: none ;
+    color: #fff;
+    background-color: #ff8400;
+}
+.info-item button:hover{
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+#footer{
+    height: 200px;
+    background-color: #0069c5;
+    padding: 25px 0 15px 0;
+}
+
